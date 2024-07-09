@@ -5,10 +5,10 @@ namespace TestMonitor\CalculatedColumns\Test;
 use Illuminate\Http\Request;
 use PHPUnit\Framework\Attributes\Test;
 use Illuminate\Database\Eloquent\Collection;
-use TestMonitor\CalculatedColumns\Exceptions\InvalidCalculatedColumn;
 use TestMonitor\CalculatedColumns\Test\Models\Order;
 use TestMonitor\CalculatedColumns\Test\Models\OrderItem;
 use TestMonitor\CalculatedColumns\Requests\CalculatedColumnsRequest;
+use TestMonitor\CalculatedColumns\Exceptions\InvalidCalculatedColumn;
 
 class CalculatedColumnsTest extends TestCase
 {

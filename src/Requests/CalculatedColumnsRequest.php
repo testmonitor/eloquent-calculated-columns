@@ -40,7 +40,7 @@ class CalculatedColumnsRequest extends Request
     {
         $columns = $this->input(config('calculated-columns.parameter')) ?? '';
 
-        if (!is_array($columns) && !is_null($columns)) {
+        if (! is_array($columns) && ! is_null($columns)) {
             $columns = explode(static::getCalculatedColumnValueDelimiter(), $columns);
         }
 
