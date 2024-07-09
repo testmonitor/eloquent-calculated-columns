@@ -1,8 +1,8 @@
 # Eloquent Calculated Columns
 
 [![Latest Stable Version](https://poser.pugx.org/testmonitor/eloquent-calculated-columns/v/stable)](https://packagist.org/packages/testmonitor/eloquent-calculated-columns)
-[![codecov](https://codecov.io/gh/testmonitor/eloquent-calculated-columns/graph/badge.svg?token=EK8IWK6R9G)](https://codecov.io/gh/testmonitor/eloquent-calculated-columns)
-[![StyleCI](https://styleci.io/repos/824909779/shield)](https://styleci.io/repos/824909779)
+[![codecov](https://codecov.io/gh/testmonitor/eloquent-calculated-columns/graph/badge.svg?token=2J7M4FNW8D)](https://codecov.io/gh/testmonitor/eloquent-calculated-columns)
+[![StyleCI](https://styleci.io/repos/826287216/shield)](https://styleci.io/repos/826287216)
 [![License](https://poser.pugx.org/testmonitor/eloquent-calculated-columns/license)](https://packagist.org/packages/eloquent-calculated-columns)
 
 A Laravel package for adding calculated columns when retrieving data from an Eloquent model. This package allows you to define these columns using SQL, resulting in more performant queries compared to accessors.
