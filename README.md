@@ -38,14 +38,15 @@ The configuration file allows you the change the HTTP parameter name, when desir
 
 ## Usage
 
-To use calculated columns in your Eloquent model, you need to:
+To use calculated columns, you need to:
 
 1. Use the trait ```TestMonitor\CalculatedColumns\HasCalculatedColumns``` in your model.
-2. Define the calculated columns when querying your model.
+2. Define the available calculated in your model.
 
 Add the CalculatedColumns trait to the models where you want to add calculated columns:
 
 ```php
+use Illuminate\Database\Query\Builder;
 use Illuminate\Database\Eloquent\Model;
 use TestMonitor\CalculatedColumns\HasCalculatedColumns;
 
@@ -53,11 +54,10 @@ class User extends Model
 {
     use HasCalculatedColumns;
 
-    // Define your calculated columns
-    public function calculatedColumns()
+    public function calculatedColumns(): array
     {
         return [
-            'total_price' => function (QueryBuilder $query) {
+            'total_price' => function (Builder $query) {
                 $query->select(DB::raw("SUM(order_items.price) AS total_price"))
                     ->from('order_items')
                     ->whereColumn('order_items.order_id', 'orders.id');

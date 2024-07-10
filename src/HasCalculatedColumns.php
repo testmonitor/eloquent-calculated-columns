@@ -16,7 +16,9 @@ trait HasCalculatedColumns
     public CalculatedColumnsRequest $calculatedColumnsRequest;
 
     /**
-     * @return array
+     * Define your calculated columns.
+     *
+     * @return array<string,Closure>
      */
     abstract public function calculatedColumns(): array;
 
